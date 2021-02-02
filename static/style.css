@@ -1,0 +1,86 @@
+/*  Colors
+ *  Dark Grey #181818
+ *  Off-White #d8d8d8
+ *  Cyan #8ff
+ *  Cyan Gradient #8ff - #088
+ *  Cyan Dark Gradient #6dd - #088
+ *  Cyan Border #4bb
+ */
+
+body {
+    background-color: #181818;
+    color: #8ff;
+}
+
+header {
+    width: 640px;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    border: 4px solid #4bb;
+    border-radius: 20px;
+
+    background-image: linear-gradient(to bottom, #8ff, #088);
+    
+    color: #181818;
+    text-align: center;
+}
+
+article {
+    width: 80%;
+    margin: auto;
+
+    font-size: 20px;
+}
+
+footer {
+    padding: 8px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    border-top: 2px solid #4bb;
+
+    background-image: linear-gradient(to bottom, #8ff, #088);
+
+    color: #181818;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    padding: 8px;
+    margin: 8px;
+    margin-top: 0px;
+
+    box-sizing: border-box;
+    flex: 0 0 20%;
+    
+    border: 4px solid #4bb;
+    border-radius: 8px;
+
+    background-image: linear-gradient(to bottom, #8ff, #088);
+
+    color: #181818;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-image: linear-gradient(to bottom, #6dd, #088);
+}
+
+hr {
+    border: 2px solid #4bb;
+}
+
+h1 {
+    font-size: 48px;
+}
