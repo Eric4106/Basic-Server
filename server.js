@@ -2,23 +2,26 @@ console.log("Ctrl + C to close");
 
 const express = require("express");
 const app = express();
-app.use(express.static("public"))
+const answers = [];
+
+app.use(express.static("public"));
+app.use(express.json());
 
 app.get("/", (request, response) => {
     console.log("Someone visited the main route");
     console.log(request.ip + "visited the main route");
 });
 
-app.get("/projects", (request, response) => {
-    console.log(request.ip + "visited /projects");
+app.get("/poll.html", (request, response) => {
+    console.log("Someone visited poll");
+    console.log(request.ip + "visited the poll");
 });
 
-app.get("/monopoly", (request, response) => {
-    console.log(request.ip + "visited /monopoly");
-});
-
-app.get("/chess", (request, response) => {
-    console.log(request.ip + "visited /chess");
+app.post("/poll.html", (request, response) => {
+    const answer = request.body.answer;
+    answers.push(answer);
+    console.log("Someone voted " + answer)
+    response.send(answers)
 });
 
 /**

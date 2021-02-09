@@ -10,10 +10,12 @@
 body {
     background-color: #181818;
     color: #8ff;
+
+    font-family: 'Times New Roman', Times, serif;
 }
 
 header {
-    width: 640px;
+    width: 520px;
     max-width: 80%;
     margin: auto;
     margin-top: 20px;
@@ -58,8 +60,7 @@ nav {
 
 nav a {
     padding: 8px;
-    margin: 8px;
-    margin-top: 0px;
+    margin: 0px 8px 4px 8px;
 
     box-sizing: border-box;
     flex: 0 0 20%;
@@ -83,4 +84,28 @@ hr {
 
 h1 {
     font-size: 48px;
+}
+
+label {
+    padding: 16px;
+}
+
+select, option, input {
+    padding: 2px;
+    margin-top: 8px;
+
+    background-color: #181818;
+
+    border: 2px solid #4bb;
+
+    color: #8ff;
+}
+
+select:hover, input:hover {
+    background-color: #282828;
+}
+
+input {
+    padding: 3px 6px;
+    margin-left: 8px;
 }

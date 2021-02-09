@@ -4,22 +4,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
         <title>Basic Server</title>
     </head>
     <body>
         <header>
-            <h1>My Projects</h1>
+            <h1>Active Polls</h1>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="projects.html">Projects</a>
-                <a href="monopoly.html">Monopoly</a>
-                <a href="chess.html">Chess</a>
+                <a href="poll.html">Polls</a>
             </nav>
         </header>
         <hr>
         <article>
-            <p>This is a server.</p>
-            <p>This is some text.</p>
+            <label for="minimum_wage">Should the minimum wage be set to $15/hr?</label>
+            <select name="minimum_wage">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Not Sure">Not Sure</option>
+            </select>
+            <input type="submit" value="Submit" id="submit_min_wage" />
         </article>
         <footer>
             <p>Created by: Eric Thomas</p>
